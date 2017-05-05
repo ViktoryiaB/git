@@ -13,8 +13,7 @@ makeCacheMatrix <- function(x = matrix()) {
 	get <- function() x
 	setinv <- function(inverse) inv <<- inverse
 	getinv <- function() inv
-	list( set = set, get = get,
-		setinv = setinv,getinv = getinv)
+	list(set = set, get = get, setinv = setinv, getinv = getinv)
 }
 
 ## This function calculates the inverse of the matrix returned by makeCacheMatrix. An assumption made here is that a matrix is always invertable.
